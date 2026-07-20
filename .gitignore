@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Data (datasets are too large for git)
+backend/data/raw/
+backend/data/features/*.npy
+backend/data/features/*.csv
+!backend/data/features/.gitkeep
+
+# Model files
+backend/saved_models/*.keras
+backend/saved_models/*.h5
+backend/saved_models/production/
+!backend/saved_models/.gitkeep
+
+# Environment
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.agents/
+.claude/
+.freebuff/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+frontend/dist/
+frontend/.vite/
+backend/__pycache__/
+
+# Logs
+*.log
